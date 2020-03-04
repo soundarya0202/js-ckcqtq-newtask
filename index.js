@@ -55,16 +55,16 @@ console.log(compare("abi","abi"))
 
 //function to compare two numbers
 function cmptwo(a,b){
-return(typeof(a)===typeof(b))
+return(a===b)
 }
 console.log(cmptwo(4,5))
 //output true
 
 //function to compare two values
 function cmpval(a,b){
-return(a===b)
+return((typeof(a)==b)?true:false)
 }
-console.log(cmpval("aa","bb"))
+console.log(cmpval("aa","aa"))
 //output true
 
 //function gradefinder to find the grade which outputs the grade of the mark
@@ -91,3 +91,17 @@ console.log(checkVowel('e'))
 //output true
 
 //function primenumber
+function primeNumber(n) {       
+            var i, f= true; 
+            for(i = 2; i <= n - 1; i++) 
+                if (n % i == 0) { 
+                    f = false; 
+                    break; 
+                }  
+            if (f == true) 
+                console.log( " Is prime"); 
+            else
+                console.log( " Is not prime"); 
+        } 
+console.log(primeNumber(13))
+//output Is prime

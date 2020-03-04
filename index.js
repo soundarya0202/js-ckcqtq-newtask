@@ -58,11 +58,11 @@ function cmptwo(a,b){
 return(a===b)
 }
 console.log(cmptwo(4,5))
-//output true
+//output false
 
 //function to compare two values
 function cmpval(a,b){
-return((typeof(a)==b)?true:false)
+return(typeof(a)==typeof(b)?true:false)
 }
 console.log(cmpval("aa","aa"))
 //output true
